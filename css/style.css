@@ -17,7 +17,7 @@ body {
 }
 
 a {
-  color: #1ca9e3;
+  color: #333;
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ li {
 }
 
 .top-icon {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 /*--------------------------------
@@ -143,6 +143,10 @@ li {
   text-transform: lowercase;
   font-family: 'Impact', serif;
   padding-left: 5px;
+}
+
+.gnav .gnav-item a:hover {
+  text-decoration: none;
 }
 
 .gnav.fixed {
@@ -326,7 +330,7 @@ about
 .rate:after {
   overflow: hidden;
   white-space: nowrap;
-  color: #f181b4;
+  color: #333;
 }
 
 .rate1:after {
@@ -384,13 +388,14 @@ about
 }
 
 .page-top {
-  font-size: 12px;
-  font-weight: bold;
   display: block;
-  padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #ffe8f4;
+  color: #fff;
+}
+
+.page-top:hover {
+  opacity: 0.8;
 }
 
 /*--------------------------------
@@ -402,6 +407,21 @@ about
 
 .footer .l-inner {
   padding: 30px;
+}
+
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px 50px 200px;
+}
+
+.footer-content a {
+  color: #fff;
+}
+
+.footer-content a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer .copyright {
