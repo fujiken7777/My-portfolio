@@ -225,6 +225,7 @@ works
 ---------------------------------*/
 .works-section .card-item {
   width: 32%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
 
 .works-section .card-item {
@@ -236,17 +237,36 @@ works
   margin-bottom: 8px;
 }
 
+.work-image {
+  height: 230px;
+}
+
+.card-caption {
+  height: 40%;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #333;
+}
+
 .works-section .card-caption-title {
-  font-size: 13px;
+  font-size: 20px;
   font-weight: bold;
+  text-align: center;
+}
+
+.works-section .card-caption-program {
+  font-size: 12px;
+  height: 20%;
 }
 
 .works-section .card-caption-info {
-  font-size: 12px;
+  font-size: 15px;
+  height: 40%;
 }
 
 .works-section .card-caption-url {
-  font-size: 10px;
+  font-size: 15px;
+  height: 20%;
 }
 
 .works-section .card-list {
@@ -293,6 +313,11 @@ about
 
 .skill-section .skill-icon img {
   width: 75px;
+}
+
+.card-skills {
+  display: flex;
+  justify-content: space-between;
 }
 
 .skill-section .skill-desc {
@@ -498,6 +523,7 @@ about
 
   .works-section .card-item {
     width: 48%;
+    height: 498px;
   }
 
   .works-section .card-caption-title {

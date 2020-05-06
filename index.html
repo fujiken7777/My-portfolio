@@ -19,13 +19,14 @@
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header-image">
-        <h1 class="logo">
+        <h1 class="logo animated rollIn">
           <span class="logo-name">Kento Fujii’s</span>
           <span class="logo-title">PORTFOLIO</span>
           <span class="logo-desc">エンジニアを目指す男の奮闘記</span>
@@ -77,35 +78,41 @@
           <div class="card-list my-gallery">
             <figure class="card-item">
               <a href="img/works/furima.png" data-size="980x668" class="card-image">
-                <img src="img/works/thumb/thumb_furima.png" alt="" />
+                <img class="work-image" src="img/works/thumb/thumb_furima.png" alt="" />
               </a>
               <figcaption class="card-caption">
                 <p class="card-caption-title">FURIMA</p>
-                <p class="card-caption-info">Design / Coding</p>
-                <p class="card-caption-url"><a class="url-link" href="http://18.180.214.184/" target="_blank">Link</a></p>
+                <p class="card-caption-program">Haml・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・GitHub・AWS</p>
+                <p class="card-caption-info">メルカリのようなフリーマーケットサイトになります。</p>
+                <p class="card-caption-url"><a class="url-link" href="https://github.com/fujiken7777/freemarket_sample_72b" target="_blank">Git Hub</a></p>
               </figcaption>
             </figure>
             <figure class="card-item">
               <a href="img/works/quizer.png" data-size="980x668" class="card-image">
-                <img src="img/works/thumb/thumb_quizer.png" alt="" />
+                <img class="work-image" src="img/works/thumb/thumb_quizer.png" alt="" />
               </a>
               <figcaption class="card-caption">
                 <p class="card-caption-title">Quizer</p>
-                <p class="card-caption-info">Design / Coding</p>
-                <p class="card-caption-url"><a class="url-link" href="https://quizer-heroku-deploy.herokuapp.com/" target="_blank">Link</a></p>
+                <p class="card-caption-program">HTML・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・GitHub・Heroku・Bootstrap</p>
+                <p class="card-caption-info">問題・クイズを共有できるSNSベースのWebサービスになります。 問題は４択形式で出題ができ、正誤判別もできるようになっています。</p>
+                <p class="card-caption-url"><a class="url-link" href="https://github.com/fujiken7777/quizer" target="_blank">Git Hub</a></p>
               </figcaption>
             </figure>
             <figure class="card-item">
-              <a href="img/works/work03.jpg" data-size="980x668" class="card-image">
-                <img src="img/works/thumb/thumb_work03.jpg" alt="" />
+              <a href="img/works/portfolio.png" data-size="980x668" class="card-image">
+                <img class="work-image" src="img/works/thumb/thumb_portfolio.png" alt="" />
               </a>
               <figcaption class="card-caption">
-                <p class="card-caption-title">作品タイトル</p>
-                <p class="card-caption-info">Design / Coding</p>
-                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+                <p class="card-caption-title">PORTFOLIO</p>
+                <p class="card-caption-program">HTML・CSS・Bootstrap・GitHub・AWS</p>
+                <p class="card-caption-info">自分自身のポートフォリオです。</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Git Hub</a></p>
               </figcaption>
             </figure>
-            <figure class="card-item">
+
+            <!-- 予備の枠 -->
+
+            <!-- <figure class="card-item">
               <a href="img/works/work04.jpg" data-size="980x668" class="card-image">
                 <img src="img/works/thumb/thumb_work04.jpg" alt="" />
               </a>
@@ -135,7 +142,7 @@
                 <p class="card-caption-info">Design / Coding</p>
                 <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
               </figcaption>
-            </figure>
+            </figure> -->
 
           </div>
         </div>
@@ -153,103 +160,108 @@
           <div class="card-list">
             
             <div class="card bg-light mb-3" style="max-width: 30rem;">
-              <div class="card-header">HTML5/CSS3</div>
+              <div class="card-header">フロントエンド</div>
               <div class="card-body">
                 <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <thead>
-                  <tr>
-                    <th scope="col">技術</th>
-                    <th scope="col">経験年数</th>
-                    <th scope="col">スキル</th>
-                  </tr>
-                </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">VB.NET</th>
-                    <td>1年</td>
-                    <td><span class="rating"><p class="rate rate4"></p></span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">php5.6,7(Laravel)</th>
-                    <td>1年</td>
-                    <td><span class="rating"><p class="rate rate5"></p></span></td>
-                  </tr>
+                  <div class="row">
+                    <div class="col">技術</div>
+                    <div class="col">経験年数</div>
+                    <div class="col">スキル</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">HTML & CSS</div>
+                    <div class="col">1年</div>
+                    <div class="col"><span class="rating"><p class="rate rate5"></p></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col">JavaScript</div>
+                    <div class="col">4ヶ月</div>
+                    <div class="col"><span class="rating"><p class="rate rate3"></p></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col">jQuery</div>
+                    <div class="col">4ヶ月</div>
+                    <div class="col"><span class="rating"><p class="rate rate3"></p></span></div>
+                  </div>
                 </tbody>
               </div>
             </div>
             <div class="card bg-light mb-3" style="max-width: 30rem;">
-              <div class="card-header">HTML5/CSS3</div>
+              <div class="card-header">バックエンド</div>
               <div class="card-body">
                 <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <thead>
-                  <tr>
-                    <th scope="col">技術</th>
-                    <th scope="col">経験年数</th>
-                    <th scope="col">スキル</th>
-                  </tr>
-                </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">VB.NET</th>
-                    <td>1年</td>
-                    <td><span class="rating"><p class="rate rate4"></p></span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">php5.6,7(Laravel)</th>
-                    <td>1年</td>
-                    <td><span class="rating"><p class="rate rate5"></p></span></td>
-                  </tr>
+                  <div class="row">
+                    <div class="col">技術</div>
+                    <div class="col">経験年数</div>
+                    <div class="col">スキル</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Ruby</div>
+                    <div class="col">5ヶ月</div>
+                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Ruby on Rails</div>
+                    <div class="col">5ヶ月</div>
+                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                  </div>
                 </tbody>
               </div>
             </div>
             <div class="card bg-light mb-3" style="max-width: 30rem;">
-              <div class="card-header">HTML5/CSS3</div>
+              <div class="card-header">DB・開発ツール</div>
               <div class="card-body">
                 <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <thead>
-                  <tr>
-                    <th scope="col">技術</th>
-                    <th scope="col">経験年数</th>
-                    <th scope="col">スキル</th>
-                  </tr>
-                </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">VB.NET</th>
-                    <td>1年</td>
-                    <td><span class="rating"><p class="rate rate4"></p></span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">php5.6,7(Laravel)</th>
-                    <td>1年</td>
-                    <td><span class="rating"><p class="rate rate5"></p></span></td>
-                  </tr>
+                  <div class="row">
+                    <div class="col">技術</div>
+                    <div class="col">経験年数</div>
+                    <div class="col">スキル</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">My SQL</div>
+                    <div class="col">5ヶ月</div>
+                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Git</div>
+                    <div class="col">5ヶ月</div>
+                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Slack</div>
+                    <div class="col">5ヶ月</div>
+                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Trello</div>
+                    <div class="col">5ヶ月</div>
+                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                  </div>
                 </tbody>
               </div>
             </div>
             <div class="card bg-light mb-3" style="max-width: 30rem;">
-              <div class="card-header">HTML5/CSS3</div>
+              <div class="card-header">インフラ・サーバー</div>
               <div class="card-body">
                 <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <thead>
-                  <tr>
-                    <th scope="col">技術</th>
-                    <th scope="col">経験年数</th>
-                    <th scope="col">スキル</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">VB.NET</th>
-                    <td>1年</td>
-                    <td><span class="rating"><p class="rate rate4"></p></span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">php5.6,7(Laravel)</th>
-                    <td>1年</td>
-                    <td><span class="rating"><p class="rate rate5"></p></span></td>
-                  </tr>
-                </tbody>
+                <div class="row">
+                  <div class="col">技術</div>
+                  <div class="col">経験年数</div>
+                  <div class="col">スキル</div>
+                </div>
+                <div class="row">
+                  <div class="col">AWS(EC2、S3)</div>
+                  <div class="col">3ヶ月</div>
+                  <div class="col"><span class="rating"><p class="rate rate3"></p></span></div>
+                </div>
+                <div class="row">
+                  <div class="col">Heroku</div>
+                  <div class="col">3ヶ月</div>
+                  <div class="col"><span class="rating"><p class="rate rate3"></p></span></div>
+                </div>
               </div>
             </div>
           </div>
