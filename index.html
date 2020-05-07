@@ -16,7 +16,7 @@
   <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="shortcut icon" href="img/faviicon.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -35,7 +35,7 @@
     </header>
     <nav class="gnav">
       <ul class="gnav-list">
-        <li class="gnav-item"><i class="far fa-address-book"><a href="#about-section">ABOUT</a></i></li>
+        <li class="gnav-item"><i class="fas fa-user-alt"><a href="#about-section">Profile</a></i></li>
         <li class="gnav-item"><i class="fas fa-book"><a href="#works-section">WORKS</a></i></li>
         <li class="gnav-item"><i class="fas fa-clipboard-check"><a href="#skill-section">SKILL</a></i></li>
         <li class="gnav-item"><i class="fas fa-mail-bulk"><a href="#contact-section">CONTACT</a></i></li>
@@ -46,11 +46,8 @@
       <section class="about-section section" id="about-section">
         <div class="l-inner">
           <div class="section-title-block">
-            <i class="far fa-address-book top-icon"></i>
-            <h2 class="section-title">ABOUT</h2>
-            <p class="section-desc">
-              こんにちは。藤井健斗と申します。
-            </p>
+            <i class="fas fa-user-alt top-icon"></i>
+            <h2 class="section-title">Profile</h2>
           </div>
           <div class="two-column-wrapper">
             <div class="two-column-image">
@@ -58,8 +55,15 @@
             </div>
             <div class="two-column-desc">
               <p class="text">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br><br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br><br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                はじめまして。藤井 健斗と申します。<br>
+                生年月日：1995年 4月18日<br>
+                高校・大学と文系出身。新卒で大手電気設備メーカーに入社し、営業に従事。そんな営業で追われる日々を過ごす中、プログラミングと出会いProgateにて学習を始める。見る見るうちにWebの技術にひかれていき、本格的に転職を決意。<br>
+                TECH CAMP（アウトプット重視の600時間のカリキュラム）にてプログラミング学習を始める。<br>
               </p>
+              <ul>
+                <li>- GitHub: <a href="https://github.com/fujiken7777" target="_blank" rel="noopener">https://github.com/fujiken7777</a></li>
+                <li>- Qiita: <a href="https://qiita.com/kenken9999" target="_blank" rel="noopener">https://qiita.com/kenken9999</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -69,7 +73,7 @@
         <div class="l-inner">
           <div class="section-title-block">
             <i class="fas fa-book top-icon"></i>
-            <h2 class="section-title">WORKS</h2>
+            <h2 class="section-title">Works</h2>
             <div class="section-desc">
               <p class="text">
                 これまでの制作実績です。</p>
@@ -152,19 +156,18 @@
         <div class="l-inner">
           <div class="section-title-block">
             <i class="fas fa-clipboard-check top-icon"></i>
-            <h2 class="section-title">SKILL</h2>
+            <h2 class="section-title">Skill</h2>
             <p class="section-desc">
-              業界未経験ですが頑張ります！
+              修練のすえ身につけたスキルになります。広く浅くではありますがフロントからバックエンドまで幅広くスキルアップに取り組んできました。<br>
+              現状使用できる言語は少ないですが、学習を深めていき更にスキルの幅を広げていきたいと考えています。今後の学習予定（PHP、Python、Swift）
             </p>
           </div>
           <div class="card-list">
-            
-            <div class="card bg-light mb-3" style="max-width: 30rem;">
-              <div class="card-header">フロントエンド</div>
+            <div class="card bg-light mb-5" style="width: 30rem;">
+              <div class="card-header"><i class="fas fa-file-code"></i> フロントエンド</div>
               <div class="card-body">
-                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 <tbody>
-                  <div class="row">
+                  <div class="row skills">
                     <div class="col">技術</div>
                     <div class="col">経験年数</div>
                     <div class="col">スキル</div>
@@ -172,7 +175,7 @@
                   <div class="row">
                     <div class="col">HTML & CSS</div>
                     <div class="col">1年</div>
-                    <div class="col"><span class="rating"><p class="rate rate5"></p></span></div>
+                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
                   </div>
                   <div class="row">
                     <div class="col">JavaScript</div>
@@ -187,12 +190,11 @@
                 </tbody>
               </div>
             </div>
-            <div class="card bg-light mb-3" style="max-width: 30rem;">
-              <div class="card-header">バックエンド</div>
+            <div class="card bg-light mb-5" style="width: 30rem;">
+              <div class="card-header"><i class="fas fa-file-code"></i> バックエンド</div>
               <div class="card-body">
-                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 <tbody>
-                  <div class="row">
+                  <div class="row skills">
                     <div class="col">技術</div>
                     <div class="col">経験年数</div>
                     <div class="col">スキル</div>
@@ -210,12 +212,11 @@
                 </tbody>
               </div>
             </div>
-            <div class="card bg-light mb-3" style="max-width: 30rem;">
-              <div class="card-header">DB・開発ツール</div>
+            <div class="card bg-light mb-5" style="width: 30rem;">
+              <div class="card-header"><i class="fas fa-database"></i> DB・開発ツール</div>
               <div class="card-body">
-                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 <tbody>
-                  <div class="row">
+                  <div class="row skills">
                     <div class="col">技術</div>
                     <div class="col">経験年数</div>
                     <div class="col">スキル</div>
@@ -223,12 +224,12 @@
                   <div class="row">
                     <div class="col">My SQL</div>
                     <div class="col">5ヶ月</div>
-                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                    <div class="col"><span class="rating"><p class="rate rate3"></p></span></div>
                   </div>
                   <div class="row">
                     <div class="col">Git</div>
                     <div class="col">5ヶ月</div>
-                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                    <div class="col"><span class="rating"><p class="rate rate3"></p></span></div>
                   </div>
                   <div class="row">
                     <div class="col">Slack</div>
@@ -238,16 +239,15 @@
                   <div class="row">
                     <div class="col">Trello</div>
                     <div class="col">5ヶ月</div>
-                    <div class="col"><span class="rating"><p class="rate rate4"></p></span></div>
+                    <div class="col"><span class="rating"><p class="rate rate3"></p></span></div>
                   </div>
                 </tbody>
               </div>
             </div>
-            <div class="card bg-light mb-3" style="max-width: 30rem;">
-              <div class="card-header">インフラ・サーバー</div>
+            <div class="card bg-light mb-5" style="width: 30rem;">
+              <div class="card-header"><i class="fas fa-server"></i> インフラ・サーバー</div>
               <div class="card-body">
-                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <div class="row">
+                <div class="row skills">
                   <div class="col">技術</div>
                   <div class="col">経験年数</div>
                   <div class="col">スキル</div>
@@ -264,6 +264,7 @@
                 </div>
               </div>
             </div>
+            <p>スキルレベルの見方としては「★1: 軽く使用した程度」、「★2: 使用しているがもう少し習熟が必要」、「★3: 調べながら実装できる」、「★4: 自力である程度までは実装できる」、「★5: 完璧」。という感じです。</p>
           </div>
         </div>
       </section>
@@ -271,19 +272,18 @@
         <div class="l-inner">
           <div class="section-title-block">
             <i class="fas fa-mail-bulk top-icon"></i>
-            <h2 class="section-title">CONTACT</h2>
+            <h2 class="section-title">Contact</h2>
             <p class="section-desc">
-              お問合わせは下記のフォームかSNSからご連絡をください。
+              最後までご覧いただきありがとうございました。このサイトを通して、私のことを少しでも知っていただけたのなら嬉しいです。<br>
+              もし何かコメントがありましたら、下記フォームをご利用ください。
             </p>
           </div>
           <div class="contacts">
             <ul class="contacts-list">
-              <li class="contacts-item"><a href="#"><img src="img/contact/icon_contact.png" alt=""><span
+              <li class="contacts-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSegiOJv0ZGDPXK3uvu9XLGu7Iq6nc0QxzdxIZMDfX2rA8cysA/viewform?usp=sf_link"><img src="img/contact/mail-1454734_1280.png" alt=""><span
                     class="contact-list-desc">フォーム</span></a></li>
-              <li class="contacts-item"><a href="#" target="_blank"><img src="img/contact/icon_contact.png" alt=""><span
+              <li class="contacts-item"><a href="https://twitter.com/kenken_en9999" target="_blank"><img src="img/contact/twitter-2430933_1280.png" alt=""><span
                     class="contact-list-desc">Twitter</span></a></li>
-              <li class="contacts-item"><a href="#" target="_blank"><img src="img/contact/icon_contact.png" alt=""><span
-                    class="contact-list-desc">Facebook</span></a></li>
             </ul>
           </div>
         </div>
@@ -297,7 +297,7 @@
             <div id="js-page-top" class="page-top">
               Page Top
             </div>
-            <li class="footer-content"><a href="#about-section">About</a></li>
+            <li class="footer-content"><a href="#about-section">Profile</a></li>
             <li class="footer-content"><a href="#works-section">Works</a></li>
             <li class="footer-content"><a href="#skill-section">Skill</a></li>
             <li class="footer-content"><a href="#contact-section">Contact</a></li>

@@ -34,7 +34,6 @@ object {
   max-width: 100%;
   height: auto;
   border: none;
-  vertical-align: bottom;
   display: block;
 }
 
@@ -66,7 +65,7 @@ li {
 ---------------------------------*/
 .header {
   height: 550px;
-  background-image: url("../img/teacup-2324842_1920.jpg");
+  background-image: url("../img/travel-3272473_1920.jpg");
   background-position-x: center;
   background-position-y: center;
   background-size: auto 100%;
@@ -121,7 +120,6 @@ li {
 グローバルナビ
 ---------------------------------*/
 .gnav {
-  padding: 10px;
   z-index: 100;
 }
 
@@ -129,6 +127,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .gnav .gnav-item {
@@ -140,7 +139,6 @@ li {
   font-weight: bold;
   color: #333;
   letter-spacing: .1em;
-  text-transform: lowercase;
   font-family: 'Impact', serif;
   padding-left: 5px;
 }
@@ -174,7 +172,6 @@ li {
 
 .section .section-title {
   font-family: 'Impact', serif;
-  text-transform: lowercase;
   letter-spacing: .2em;
   display: inline-block;
   font-size: 36px;
@@ -185,12 +182,12 @@ li {
 
 .section .section-desc {
   text-align: center;
+  padding: 0 50px;
 }
 
 .two-column-wrapper {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
-  padding: 20px 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -315,9 +312,28 @@ about
   width: 75px;
 }
 
+.card-header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-body {
+  background-color: #fff;
+}
+
+.card {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  /* margin-bottom: 30px; */
+}
+
 .card-skills {
   display: flex;
   justify-content: space-between;
+}
+
+.skills {
+  margin-bottom: 30px;
 }
 
 .skill-section .skill-desc {
@@ -417,6 +433,7 @@ about
   cursor: pointer;
   text-align: center;
   color: #fff;
+  font-size: 16px;
 }
 
 .page-top:hover {
@@ -437,11 +454,12 @@ about
 .footer-contents {
   display: flex;
   justify-content: space-between;
-  padding: 20px 200px 50px 200px;
+  padding: 20px 0 50px 0;
 }
 
 .footer-content a {
   color: #fff;
+  font-size: 16px;
 }
 
 .footer-content a:hover {
@@ -479,7 +497,17 @@ about
     font-size: 10px;
   }
 
+  .gnav {
+    padding: 10px 0 10px 0;
+  }
+
   .gnav .gnav-list {
+    padding: 0 10px;
+    display: flex;
+  }
+
+  .gnav .gnav-item {
+    font-size: 20px;
     padding: 0 10px;
   }
 
@@ -507,6 +535,11 @@ about
     font-size: 32px;
   }
 
+  .section .section-desc {
+    text-align: left;
+    padding: 0 5px;
+  }
+
   .feature-section .two-column-wrapper {
     width: 100%;
     flex-wrap: wrap;
@@ -522,7 +555,7 @@ about
   }
 
   .works-section .card-item {
-    width: 48%;
+    width: 100%;
     height: 498px;
   }
 
@@ -623,5 +656,9 @@ about
     font-size: 10px;
     padding: 0 10px;
     margin-bottom: 5px;
+  }
+  
+  .page-top {
+    padding: 0 10px;
   }
 }
