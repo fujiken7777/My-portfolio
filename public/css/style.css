@@ -640,10 +640,6 @@ about
     flex-basis: 30%;
   }
 
-  .contacts .contacts-item img {
-    width: 30px;
-  }
-
   .contacts .contact-list-desc {
     font-size: 12px;
   }
