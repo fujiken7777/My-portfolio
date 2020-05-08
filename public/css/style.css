@@ -37,10 +37,10 @@ object {
   display: block;
 }
 
-ul,
+/* ul,
 li {
   list-style: none;
-}
+} */
 
 /*--------------------------------
 全体
@@ -186,7 +186,7 @@ li {
 }
 
 .two-column-wrapper {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
@@ -204,6 +204,17 @@ li {
 
 .two-column-desc {
   width: 62%;
+}
+
+.two-column-desc .lead {
+  font-size: 18px;
+  letter-spacing: .03rem;
+  padding-inline-start: 40px;
+}
+
+.link-list {
+  list-style: none;
+  padding-inline-start: 40px;
 }
 
 /*--------------------------------
@@ -266,6 +277,10 @@ works
   height: 20%;
 }
 
+.works-section .card-caption-url .url-link {
+  margin-right: 10px;
+}
+
 .works-section .card-list {
   padding: 20px 0;
   display: flex;
@@ -324,7 +339,6 @@ about
 
 .card {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  /* margin-bottom: 30px; */
 }
 
 .card-skills {
@@ -333,7 +347,19 @@ about
 }
 
 .skills {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.language {
+  font-weight: bold;
+}
+
+.skill-text {
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
 .skill-section .skill-desc {
@@ -438,6 +464,10 @@ about
 
 .page-top:hover {
   opacity: 0.8;
+}
+
+.contacts-item {
+  list-style: none;
 }
 
 /*--------------------------------
