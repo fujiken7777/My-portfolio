@@ -206,6 +206,11 @@ li {
   width: 62%;
 }
 
+.two-column-desc .lead {
+  list-style-type: disc;
+}
+
+
 /*--------------------------------
 feature
 ---------------------------------*/
@@ -266,12 +271,19 @@ works
   height: 20%;
 }
 
+.works-section .card-caption-url .url-link {
+  margin-right: 10px;
+}
+
+
 .works-section .card-list {
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+
 
 /*--------------------------------
 about
